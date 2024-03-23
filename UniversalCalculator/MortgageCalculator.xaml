@@ -1,0 +1,40 @@
+﻿<Page
+    x:Class="Calculator.MortgageCalculator"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Calculator"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+	<Grid x:Name="titleTextBlock">
+		<TextBlock HorizontalAlignment="Left" Margin="274,31,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Century Gothic" FontWeight="Bold" FontSize="72"><Run Text="Mortgage Calcula"/><Run Text="tor"/></TextBlock>
+
+		<TextBlock x:Name="PrinicipalTextBlock" HorizontalAlignment="Left" Margin="366,169,0,0" TextWrapping="Wrap" Text="Principal Borrow $:" VerticalAlignment="Top" FontFamily="Century Gothic" FontSize="24"/>
+		<TextBox x:Name="principalTextBox" HorizontalAlignment="Left" Margin="640,166,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="216"/>
+
+		<TextBlock x:Name="yearsTextBlock" HorizontalAlignment="Left" Margin="366,235,0,0" TextWrapping="Wrap" Text="Years:" VerticalAlignment="Top" FontFamily="Century Gothic" FontSize="24"/>
+		<TextBox x:Name="yearsTextBox" HorizontalAlignment="Left" Margin="639,235,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="216"/>
+
+		<TextBlock x:Name="monthsTextBlock" HorizontalAlignment="Left" Margin="369,311,0,0" TextWrapping="Wrap" Text="and Months:" VerticalAlignment="Top" FontFamily="Century Gothic" FontSize="24"/>
+		<TextBox x:Name="monthsTextBox" HorizontalAlignment="Left" Margin="640,310,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="216"/>
+
+		<TextBlock x:Name="yearinterestTextBlock" HorizontalAlignment="Left" Margin="358,392,0,0" TextWrapping="Wrap" Text="Yearly Interest Rate:" VerticalAlignment="Top" FontFamily="Century Gothic" FontSize="24"/>
+		<TextBox x:Name="yearinterestTextBox" HorizontalAlignment="Left" Margin="640,392,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="216"/>
+
+		<TextBlock x:Name="monthinterestTextBlock" HorizontalAlignment="Left" Margin="359,464,0,0" TextWrapping="Wrap" Text="Monthly Interest Rate:" VerticalAlignment="Top" FontFamily="Century Gothic" FontSize="24"/>
+		<TextBox x:Name="monthinterestTextBox" HorizontalAlignment="Left" Margin="639,464,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="216"/>
+
+		<TextBlock x:Name="repaymentTextBlock" HorizontalAlignment="Left" Margin="359,521,0,0" TextWrapping="Wrap" Text="Monthy Repayment $:" VerticalAlignment="Top" FontFamily="Century Gothic" FontSize="24"/>
+		<TextBox x:Name="repaymentTextBox" HorizontalAlignment="Left" Margin="640,520,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="216"/>
+
+		<Button x:Name="calculateButton" Content="Calculate" Margin="488,596,0,0" VerticalAlignment="Top" Height="66" Width="151" FontFamily="Century Gothic" FontWeight="Bold" FontSize="22" Click="calculateButton_Click"/>
+
+		<Button x:Name="exitButton" Content="Exit" Margin="670,596,0,0" VerticalAlignment="Top" Height="66" Width="78" FontFamily="Century Gothic" FontSize="22" FontWeight="Bold" Click="exitButton_Click"/>
+
+
+
+	</Grid>
+
+</Page>
